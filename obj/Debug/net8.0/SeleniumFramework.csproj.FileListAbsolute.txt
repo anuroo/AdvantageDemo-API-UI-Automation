@@ -9,6 +9,8 @@
 /Users/anuroop/Automation-Selenium/SeleniumFramework/bin/Debug/net8.0/nunit.engine.core.dll
 /Users/anuroop/Automation-Selenium/SeleniumFramework/bin/Debug/net8.0/testcentric.engine.metadata.dll
 /Users/anuroop/Automation-Selenium/SeleniumFramework/bin/Debug/net8.0/appsettings.json
+/Users/anuroop/Automation-Selenium/SeleniumFramework/bin/Debug/net8.0/TestData/loginData.json
+/Users/anuroop/Automation-Selenium/SeleniumFramework/bin/Debug/net8.0/TestData/RegisterUserData.json
 /Users/anuroop/Automation-Selenium/SeleniumFramework/bin/Debug/net8.0/SeleniumFramework.deps.json
 /Users/anuroop/Automation-Selenium/SeleniumFramework/bin/Debug/net8.0/SeleniumFramework.runtimeconfig.json
 /Users/anuroop/Automation-Selenium/SeleniumFramework/bin/Debug/net8.0/SeleniumFramework.dll
@@ -137,11 +139,10 @@
 /Users/anuroop/Automation-Selenium/SeleniumFramework/obj/Debug/net8.0/SeleniumFramework.AssemblyInfoInputs.cache
 /Users/anuroop/Automation-Selenium/SeleniumFramework/obj/Debug/net8.0/SeleniumFramework.AssemblyInfo.cs
 /Users/anuroop/Automation-Selenium/SeleniumFramework/obj/Debug/net8.0/SeleniumFramework.csproj.CoreCompileInputs.cache
+/Users/anuroop/Automation-Selenium/SeleniumFramework/obj/Debug/net8.0/SeleniumFramework.sourcelink.json
 /Users/anuroop/Automation-Selenium/SeleniumFramework/obj/Debug/net8.0/Selenium.6373D7D3.Up2Date
 /Users/anuroop/Automation-Selenium/SeleniumFramework/obj/Debug/net8.0/SeleniumFramework.dll
 /Users/anuroop/Automation-Selenium/SeleniumFramework/obj/Debug/net8.0/refint/SeleniumFramework.dll
 /Users/anuroop/Automation-Selenium/SeleniumFramework/obj/Debug/net8.0/SeleniumFramework.pdb
 /Users/anuroop/Automation-Selenium/SeleniumFramework/obj/Debug/net8.0/SeleniumFramework.genruntimeconfig.cache
 /Users/anuroop/Automation-Selenium/SeleniumFramework/obj/Debug/net8.0/ref/SeleniumFramework.dll
-/Users/anuroop/Automation-Selenium/SeleniumFramework/bin/Debug/net8.0/TestData/loginData.json
-/Users/anuroop/Automation-Selenium/SeleniumFramework/bin/Debug/net8.0/TestData/RegisterUserData.json

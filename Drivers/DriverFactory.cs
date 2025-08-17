@@ -3,6 +3,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Edge;
 using SeleniumFramework.Utilities;
+using OpenQA.Selenium.Remote;
 
 namespace SeleniumFramework.Drivers
 {
@@ -14,13 +15,25 @@ namespace SeleniumFramework.Drivers
         public static void InitDriver()
         {
             string browser = ConfigReader.Get("browser")?.ToLower();
-            driver.Value = browser switch
+            string executionEnv = ConfigReader.Get("executionEnv").ToLower();
+            string gridUrl = ConfigReader.Get("gridUrl");
+            if (executionEnv == "local")
             {
-                "chrome" => new ChromeDriver(),
-                "firefox" => new FirefoxDriver(),
-                "edge" => new EdgeDriver(),
-                _ => new ChromeDriver()
-            };
+                driver.Value = browser switch
+                {
+                    "chrome" => new ChromeDriver(),
+                    "firefox" => new FirefoxDriver(),
+                    "edge" => new EdgeDriver(),
+                    _ => new ChromeDriver()
+                };
+            }
+            else if (executionEnv == "remote")
+            {
+                var capabilities = new OpenQA.Selenium.Chrome.ChromeOptions();
+                capabilities.AddArgument("--start-maximized");
+
+                driver.Value = new RemoteWebDriver(new Uri(gridUrl), capabilities.ToCapabilities(), TimeSpan.FromSeconds(60));
+            }
             driver.Value.Manage().Window.Maximize();
             driver.Value.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
         }

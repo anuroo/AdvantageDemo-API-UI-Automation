@@ -375,3 +375,27 @@
 2025-08-09 19:35:46.7631|INFO|SeleniumFramework.Logger|Wait for element:Register button to be clickable in 50s seconds
 2025-08-09 19:35:46.7744|INFO|SeleniumFramework.Logger|Clicking on element: By.XPath: //button[@id='register_btn']
 2025-08-09 19:35:46.7802|INFO|SeleniumFramework.Tests.BaseTests|================== Ending Test =================
+2025-08-17 21:32:52.9926|INFO|SeleniumFramework.Tests.BaseTests|================== Starting Test =================
+2025-08-17 21:32:52.9926|INFO|SeleniumFramework.Tests.BaseTests|================== Starting Test =================
+2025-08-17 21:33:05.2446|INFO|SeleniumFramework.Logger|Wait for element:By.Id: menuUserLink to be clickable in 30s seconds
+2025-08-17 21:33:05.2611|INFO|SeleniumFramework.Logger|Clicking on element: By.Id: menuUserLink
+2025-08-17 21:33:05.8020|INFO|SeleniumFramework.Logger|Entering anuroop over element:By.XPath: //input[@name='username']
+2025-08-17 21:33:05.8747|INFO|SeleniumFramework.Logger|Wait for element:By.Id: menuUserLink to be clickable in 30s seconds
+2025-08-17 21:33:05.9034|INFO|SeleniumFramework.Logger|Clicking on element: By.Id: menuUserLink
+2025-08-17 21:33:05.9402|INFO|SeleniumFramework.Logger|Entering Password@123 over element:By.XPath: //input[@name='password']
+2025-08-17 21:33:06.9411|INFO|SeleniumFramework.Logger|Entering anuroop over element:By.XPath: //input[@name='username']
+2025-08-17 21:33:07.0263|INFO|SeleniumFramework.Logger|Entering Password@123 over element:By.XPath: //input[@name='password']
+2025-08-17 21:33:07.9845|INFO|SeleniumFramework.Logger|Wait for element:By.XPath: //button[@id='sign_in_btn'] to be clickable in 50s seconds
+2025-08-17 21:33:08.0122|INFO|SeleniumFramework.Logger|Clicking on element: By.XPath: //button[@id='sign_in_btn']
+2025-08-17 21:33:08.5442|INFO|SeleniumFramework.Logger|Wait for element:By.Id: menuUserLink to be clickable in 30s seconds
+2025-08-17 21:33:08.5565|INFO|SeleniumFramework.Logger|Clicking on element: By.Id: menuUserLink
+2025-08-17 21:33:08.5647|INFO|SeleniumFramework.Logger|Wait for element:By.XPath: //div[@id='loginMiniTitle']/label[text()='Sign out'] to be clickable in 50s seconds
+2025-08-17 21:33:09.0604|INFO|SeleniumFramework.Logger|Wait for element:By.XPath: //button[@id='sign_in_btn'] to be clickable in 50s seconds
+2025-08-17 21:33:09.0876|INFO|SeleniumFramework.Logger|Clicking on element: By.XPath: //button[@id='sign_in_btn']
+2025-08-17 21:33:09.0917|INFO|SeleniumFramework.Logger|Clicking on element: By.XPath: //div[@id='loginMiniTitle']/label[text()='Sign out']
+2025-08-17 21:33:09.1021|INFO|SeleniumFramework.Tests.BaseTests|================== Ending Test =================
+2025-08-17 21:33:10.1134|INFO|SeleniumFramework.Logger|Wait for element:By.Id: menuUserLink to be clickable in 30s seconds
+2025-08-17 21:33:10.1203|INFO|SeleniumFramework.Logger|Clicking on element: By.Id: menuUserLink
+2025-08-17 21:33:10.1304|INFO|SeleniumFramework.Logger|Wait for element:By.XPath: //div[@id='loginMiniTitle']/label[text()='Sign out'] to be clickable in 50s seconds
+2025-08-17 21:33:10.1384|INFO|SeleniumFramework.Logger|Clicking on element: By.XPath: //div[@id='loginMiniTitle']/label[text()='Sign out']
+2025-08-17 21:33:10.1439|INFO|SeleniumFramework.Tests.BaseTests|================== Ending Test =================

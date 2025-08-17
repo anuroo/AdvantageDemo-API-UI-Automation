@@ -53,22 +53,24 @@ selenium-csharp-framework/
 
 1️⃣ Run Locally
 
-git clone https://github.com/anuroo/AdvantageDemo-API-UI-Automation.git
-cd selenium-csharp-framework
-dotnet test
+- git clone https://github.com/anuroo/AdvantageDemo-API-UI-Automation.git
+
+- cd selenium-csharp-framework
+
+- dotnet test
 
 2️⃣ Run with Docker
 
 Build and run inside a container:
 
-docker build -t selenium-csharp-framework .
-docker run selenium-csharp-framework
+- docker build -t selenium-csharp-framework .
+- docker run selenium-csharp-framework
 
 3️⃣ Run with Selenium Grid (Optional)
 
 Spin up Selenium Grid with Chrome & Firefox nodes:
 
-docker-compose -f docker/docker-compose.yml up --build
+- docker-compose -f docker/docker-compose.yml up --build
 
 📊 Reports
 
