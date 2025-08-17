@@ -31,20 +31,21 @@ It follows **industry best practices** including Page Object Model (POM), Thread
 ---
 
 ## 📂 Project Structure
+
 selenium-csharp-framework/
- ┣ src/
- ┃ ┣ Framework/        # Core utilities (DriverFactory, ConfigReader, Helpers)
- ┃ ┣ Tests/            # Test classes (LoginTests, CheckoutTests etc.)
- ┃ ┣ Pages/            # Page Object Models
- ┃ ┣ TestData/         # JSON/CSV test data files
- ┃ ┗ Reports/          # Extent/NUnit reports
- ┣ docker/
- ┃ ┣ docker-compose.yml
- ┃ ┗ Dockerfile
- ┣ .github/workflows/  # GitHub Actions pipeline
- ┣ README.md
- ┣ .gitignore
- ┗ selenium-csharp-framework.sln
+├── src/
+│   ├── Framework/         # Core utilities (DriverFactory, ConfigReader, Helpers)
+│   ├── Tests/             # Test classes (LoginTests, CheckoutTests etc.)
+│   ├── Pages/             # Page Object Models
+│   ├── TestData/          # JSON/CSV test data files
+│   └── Reports/           # Extent/NUnit reports
+├── docker/
+│   ├── docker-compose.yml
+│   └── Dockerfile
+├── .github/workflows/     # GitHub Actions pipeline
+├── README.md
+├── .gitignore
+└── selenium-csharp-framework.sln
 
 ---
 
@@ -52,7 +53,7 @@ selenium-csharp-framework/
 
 1️⃣ Run Locally
 
-git clone https://github.com/<your-username>/selenium-csharp-framework.git
+git clone https://github.com/anuroo/AdvantageDemo-API-UI-Automation.git
 cd selenium-csharp-framework
 dotnet test
 
