@@ -31,8 +31,9 @@ namespace SeleniumFramework.Drivers
             {
                 var capabilities = new OpenQA.Selenium.Chrome.ChromeOptions();
                 capabilities.AddArgument("--start-maximized");
-
-                driver.Value = new RemoteWebDriver(new Uri(gridUrl), capabilities.ToCapabilities(), TimeSpan.FromSeconds(60));
+                var options = new ChromeOptions();
+                driver.Value = new RemoteWebDriver(new Uri(gridUrl), options);
+                // driver.Value = new RemoteWebDriver(new Uri(gridUrl), capabilities.ToCapabilities(), TimeSpan.FromSeconds(60));
             }
             driver.Value.Manage().Window.Maximize();
             driver.Value.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
