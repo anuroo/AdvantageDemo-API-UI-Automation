@@ -31,48 +31,50 @@ It follows **industry best practices** including Page Object Model (POM), Thread
 ---
 
 ## 📂 Project Structure
-SeleniumFramework/
-│── Framework/
-│   ├── Drivers/          # WebDriver management
-│   ├── Pages/            # Page Object Models
-│   ├── Tests/            # NUnit Test Classes
-│   ├── Utils/            # Helpers, Config, Logger
-│   └── Reports/          # HTML Reports & Screenshots
-│
-├── appsettings.json      # Configurations
-├── Dockerfile            # Docker setup
-├── docker-compose.yml    # Selenium Grid setup
-├── README.md             # Documentation
-└── .github/workflows/    # CI/CD pipeline configs
+selenium-csharp-framework/
+ ┣ src/
+ ┃ ┣ Framework/        # Core utilities (DriverFactory, ConfigReader, Helpers)
+ ┃ ┣ Tests/            # Test classes (LoginTests, CheckoutTests etc.)
+ ┃ ┣ Pages/            # Page Object Models
+ ┃ ┣ TestData/         # JSON/CSV test data files
+ ┃ ┗ Reports/          # Extent/NUnit reports
+ ┣ docker/
+ ┃ ┣ docker-compose.yml
+ ┃ ┗ Dockerfile
+ ┣ .github/workflows/  # GitHub Actions pipeline
+ ┣ README.md
+ ┣ .gitignore
+ ┗ selenium-csharp-framework.sln
 
 ---
 
-## ▶️ How to Run Tests
+🚀 How to Run Tests
 
-### 🔹 Local Execution
-```bash
+1️⃣ Run Locally
+
+git clone https://github.com/<your-username>/selenium-csharp-framework.git
+cd selenium-csharp-framework
 dotnet test
 
-🔹 Cross-Browser Execution
+2️⃣ Run with Docker
 
-Update appsettings.json:
-"Browser": "Firefox"
+Build and run inside a container:
 
-and then run dotnet test
+docker build -t selenium-csharp-framework .
+docker run selenium-csharp-framework
 
-🔹 Docker + Selenium Grid
-	1.	Start Selenium Grid:
-    docker-compose up -d
-    2.run tests:
-    dotnet test
+3️⃣ Run with Selenium Grid (Optional)
 
-📊 Reports & Artifacts
-	•	Test results generated using Extent Reports in Reports/
-	•	Screenshots captured automatically on test failure
+Spin up Selenium Grid with Chrome & Firefox nodes:
 
-CI/CD Integration
+docker-compose -f docker/docker-compose.yml up --build
 
-This project supports CI/CD pipelines:
-	•	GitHub Actions: .github/workflows/dotnet.yml included
-	•	Jenkins: Can be triggered via dotnet test command
-	•	Supports headless test execution inside pipelines
+📊 Reports
+
+After execution, test reports are generated in the Reports/ folder.
+
+CI/CD with GitHub Actions
+
+This project includes a GitHub Actions pipeline to:
+	•	Run tests on each push/pull request.
+	•	Generate and upload test reports as artifacts.
