@@ -1,0 +1,30 @@
+[
+  {
+    "Username": "techguy01",
+    "Email": "techguy01@testmail.com",
+    "Password": "Pass@1234",
+    "ConfirmPassword": "Pass@1234",
+    "FirstName": "Rahul",
+    "LastName": "Sharma",
+    "PhoneNumber": "9876543210",
+    "Country": "India",
+    "City": "Bengaluru",
+    "Address": "12 MG Road",
+    "StateProvinceRegion": "Karnataka",
+    "PostalCode": "560001"
+  },
+  {
+    "Username": "shopper_j",
+    "Email": "shopper.j@testmail.com",
+    "Password": "Shop@5678",
+    "ConfirmPassword": "Shop@5678",
+    "FirstName": "Jessica",
+    "LastName": "Brown",
+    "PhoneNumber": "5551234567",
+    "Country": "United States",
+    "City": "New York",
+    "Address": "45 Madison Ave",
+    "StateProvinceRegion": "NY",
+    "PostalCode": "10016"
+  }
+]
