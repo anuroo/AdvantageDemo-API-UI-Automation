@@ -29,10 +29,28 @@ namespace SeleniumFramework.Drivers
             }
             else if (executionEnv == "remote")
             {
-                var capabilities = new OpenQA.Selenium.Chrome.ChromeOptions();
-                capabilities.AddArgument("--start-maximized");
-                var options = new ChromeOptions();
-                driver.Value = new RemoteWebDriver(new Uri(gridUrl), options);
+                if (browser == "chrome")
+                {
+                    var opts = new ChromeOptions();
+                    opts.AddArgument("--disable-dev-shm-usage");
+                    opts.AddArgument("--no-sandbox");
+                    opts.AddArgument("--disable-gpu");
+                    opts.AddArgument("--remote-debugging-port=9222");
+                    driver.Value = new RemoteWebDriver(new Uri(gridUrl), opts.ToCapabilities(), TimeSpan.FromSeconds(120));
+                }
+                else if (browser == "firefox")
+                {
+                    var opts = new FirefoxOptions();
+                    driver.Value = new RemoteWebDriver(new Uri(gridUrl), opts.ToCapabilities(), TimeSpan.FromSeconds(120));
+                }
+                else
+                {
+                    throw new ArgumentException($"Unsupported browser: {browser}");
+                }
+                // var capabilities = new OpenQA.Selenium.Chrome.ChromeOptions();
+                // capabilities.AddArgument("--start-maximized");
+                // var options = new ChromeOptions();
+                // driver.Value = new RemoteWebDriver(new Uri(gridUrl), options);
                 // driver.Value = new RemoteWebDriver(new Uri(gridUrl), capabilities.ToCapabilities(), TimeSpan.FromSeconds(60));
             }
             driver.Value.Manage().Window.Maximize();
